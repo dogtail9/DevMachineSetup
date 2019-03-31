@@ -1,0 +1,31 @@
+& $Env:ProgramFiles\Docker\Docker\DockerCli.exe -SwitchWindowsEngine
+docker pull mcr.microsoft.com/dotnet/core/runtime:2.2.3-nanoserver-1809             
+docker pull mcr.microsoft.com/dotnet/core/runtime:3.0.0-preview3-nanoserver-1809    
+docker pull mcr.microsoft.com/dotnet/core/sdk:2.2.105-nanoserver-1809            
+docker pull mcr.microsoft.com/dotnet/core/sdk:3.0.100-preview3-nanoserver-1809  
+docker pull mcr.microsoft.com/dotnet/core/aspnet:2.2.3-nanoserver-1809             
+docker pull mcr.microsoft.com/dotnet/core/aspnet:3.0.0-preview3-nanoserver-1803    
+docker pull mcr.microsoft.com/windows/servercore:ltsc2019                        
+docker pull mcr.microsoft.com/windows/nanoserver:1809                              
+docker pull mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2019         
+docker pull mcr.microsoft.com/dotnet/framework/wcf:4.7.2                              
+docker pull mcr.microsoft.com/dotnet/framework/aspnet:4.7.2                              
+docker pull microsoft/dotnet-framework:4.7.2-sdk                          
+docker pull microsoft/dotnet-framework:4.7.2-runtime                   
+docker pull microsoft/mssql-server-windows-developer:latest                             
+docker pull microsoft/mssql-server-windows-developer:2017-CU1                           
+& $Env:ProgramFiles\Docker\Docker\DockerCli.exe -SwitchLinuxEngine
+docker pull mcr.microsoft.com/dotnet/core/runtime:2.2.3-alpine3.9
+docker pull mcr.microsoft.com/dotnet/core/runtime:3.0.0-preview3-alpine3.9
+docker pull mcr.microsoft.com/dotnet/core/aspnet:2.2.3-alpine3.9
+docker pull mcr.microsoft.com/dotnet/core/aspnet:3.0.0-preview3-alpine3.9
+docker pull mcr.microsoft.com/dotnet/core/sdk:2.2.105-alpine3.9 
+docker pull mcr.microsoft.com/dotnet/core/sdk:3.0.100-preview3-alpine3.9
+docker pull mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+docker pull mcr.microsoft.com/mssql/server:2019-CTP2.2-ubuntu
+docker pull nginx:1.15.10-alpine
+& $Env:ProgramFiles\Docker\Docker\DockerCli.exe -SwitchWindowsEngine
+docker images
+& $Env:ProgramFiles\Docker\Docker\DockerCli.exe -SwitchLinuxEngine
+docker images
+& $Env:ProgramFiles\Docker\Docker\DockerCli.exe -SwitchWindowsEngine
